@@ -13,6 +13,7 @@ before_install:
 install:
     - npm install
 script:
+    - hexo clean
     - hexo generate # 自动化构建的脚本
 deploy:
   provider: pages
