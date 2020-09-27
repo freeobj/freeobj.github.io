@@ -9,12 +9,13 @@ branches:
 before_install:
     - npm install -g hexo-cli
     - git clone https://github.com/theme-next/hexo-theme-next themes/next
-    - npm install
+    - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
 install:
     - npm install
 script:
     - hexo clean
     - hexo generate # 自动化构建的脚本
+    - echo "blog.codezm.com" > public/CNAME
 deploy:
   provider: pages
   skip-cleanup: true
