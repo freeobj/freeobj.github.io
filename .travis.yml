@@ -15,7 +15,7 @@ install:
 script:
     - hexo clean
     - hexo generate # 自动化构建的脚本
-    - echo "blog.codezm.com" > public/CNAME
+    - echo "blogs.codezm.com" > public/CNAME
 deploy:
   provider: pages
   skip-cleanup: true
