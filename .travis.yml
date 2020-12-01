@@ -11,7 +11,7 @@ before_install:
     - git clone https://github.com/theme-next/hexo-theme-next themes/next
     - git clone https://github.com/theme-next/theme-next-pace themes/next/source/lib/pace
 install:
-    - npm install
+    - npm install --production
 script:
     - hexo clean
     - hexo generate # 自动化构建的脚本
